@@ -70,7 +70,7 @@ namespace symulator8086
                 return;
             }
 
-            MainRegisters[regs.RegisterSrc] = MainRegisters[regs.RegisterDst];
+            MainRegisters[regs.RegisterDst] = MainRegisters[regs.RegisterSrc];
             RefreshUi();
         }
         private void Exchange_Click(object sender, RoutedEventArgs e)
