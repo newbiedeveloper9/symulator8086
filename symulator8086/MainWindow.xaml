@@ -1,0 +1,31 @@
+﻿<Window x:Class="symulator8086.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:symulator8086"
+        mc:Ignorable="d" Height="245" Width="170" ResizeMode="NoResize">
+    <Grid x:Name="Grid">
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="41" x:Name="Reset" Click="Reset_Click"/>
+        <Button Content="Random" HorizontalAlignment="Left" Margin="57,10,0,0" VerticalAlignment="Top" Width="84" x:Name="Random" Click="Random_Click"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="35,39,0,0" TextWrapping="Wrap" Text=""  VerticalAlignment="Top" Width="74" IsReadOnly="True" x:Name="TxtBox1"/>
+        <TextBox HorizontalAlignment="Left" Margin="35,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" IsReadOnly="True" x:Name="TxtBox2"/>
+        <TextBox HorizontalAlignment="Left" Margin="35,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" IsReadOnly="True" x:Name="TxtBox3"/>
+        <TextBox HorizontalAlignment="Left" Margin="35,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="74" IsReadOnly="True" x:Name="TxtBox4"/>
+
+        <Label Content="AX" HorizontalAlignment="Left" Margin="8,36,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="BX" HorizontalAlignment="Left" Margin="8,59,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="CX" HorizontalAlignment="Left" Margin="8,82,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <Label Content="DX" HorizontalAlignment="Left" Margin="8,105,0,0" VerticalAlignment="Top" FontSize="10"/>
+
+        <ComboBox HorizontalAlignment="Left" Margin="8,138,0,0" VerticalAlignment="Top" Width="64" x:Name="comboBox1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="77,138,0,0" VerticalAlignment="Top" Width="64" x:Name="comboBox2"/>
+
+        <Button Content="MOV" HorizontalAlignment="Left" Margin="8,165,0,0" VerticalAlignment="Top" Width="64" x:Name="Move" Click="Move_Click"/>
+        <Button Content="XCHG" HorizontalAlignment="Left" Margin="77,165,0,0" VerticalAlignment="Top" Width="64" x:Name="Exchange" Click="Exchange_Click"/>
+
+        <Label HorizontalAlignment="Left" Margin="54,185,0,0" VerticalAlignment="Top" FontSize="8" Content="Michał Wojciechowski"/>
+
+    </Grid>
+</Window>
